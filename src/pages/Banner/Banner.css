@@ -1,0 +1,15 @@
+.banner-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.banner-text {
+    margin-right: 20px;
+}
