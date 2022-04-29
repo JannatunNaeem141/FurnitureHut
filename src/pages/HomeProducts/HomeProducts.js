@@ -1,16 +1,17 @@
 import React from 'react';
 import useProducts from '../../hooks/useProducts';
 import Product from '../Product/Product';
-import './Products.css';
+import './HomeProducts.css';
 
-const Products = () => {
+const HomeProducts = () => {
     const [products, setProducts] = useProducts();
+    const sixProducts = products.slice(0, 6);
+    console.log(sixProducts);
     return (
-        <div className='products-section'>
-            <h2>All Products</h2>
-            <div className='all-products'>
+        <div className='home-products'>
+            <div className='sixProducts'>
                 {
-                    products.map(product => <Product key={product.id}
+                    sixProducts.map(product => <Product key={product.id}
                         product={product}></Product>)
                 }
             </div>
@@ -18,4 +19,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default HomeProducts;

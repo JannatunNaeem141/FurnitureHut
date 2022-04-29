@@ -1,9 +1,9 @@
-.products-section {
+.home-products {
     width: 80%;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
-.all-products {
+.sixProducts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
