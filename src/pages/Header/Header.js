@@ -14,8 +14,8 @@ const Header = () => {
                         <Nav.Link as={Link} to='/products' href="#products">Products</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#login">Login</Nav.Link>
-                        <Nav.Link href="#register">Register</Nav.Link>
+                        <Nav.Link href="#login" as={Link} to='/login'>Login</Nav.Link>
+                        <Nav.Link href="#register" as={Link} to='/register'>Register</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

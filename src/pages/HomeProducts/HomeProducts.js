@@ -6,9 +6,9 @@ import './HomeProducts.css';
 const HomeProducts = () => {
     const [products, setProducts] = useProducts();
     const sixProducts = products.slice(0, 6);
-    console.log(sixProducts);
     return (
         <div className='home-products'>
+            <h2>Products</h2>
             <div className='sixProducts'>
                 {
                     sixProducts.map(product => <Product key={product.id}

@@ -1,0 +1,35 @@
+.divider-container {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    width: 50%;
+    background-color: orange;
+    height: 1px;
+}
+
+.divider-text {
+    color: #000;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.sign-in-btn {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 8px 0px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #000;
+    transition: 0.5s;
+}
+
+.sign-in-btn:hover {
+    background-color: orange;
+
+}

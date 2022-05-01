@@ -1,7 +1,6 @@
 .banner-section {
     width: 80%;
     margin: 0 auto;
-    height: 70vh;
 }
 
 .banner {
@@ -9,6 +8,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    height: 60vh;
 }
 
 .banner-text {

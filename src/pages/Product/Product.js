@@ -1,12 +1,14 @@
 import React from 'react';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 import './Product.css';
 
 const Product = ({ product }) => {
     const { name, img, description, id, price, quantity, supplier } = product;
+    const navigate = useNavigate();
 
-    const handleUpdate = () => {
-
+    const handleUpdate = (id, name, img) => {
+        navigate(`/product/${id}`);
     }
     return (
         <Card>
@@ -23,7 +25,10 @@ const Product = ({ product }) => {
                 <ListGroupItem><span>Supplier:</span> {supplier}</ListGroupItem>
             </ListGroup>
             <Card.Body>
-                <button onClick={handleUpdate}>Stock Update</button>
+                {/* <Link >
+                    <button onClick={() => handleUpdate(id)}>Stock Update</button>
+                </Link> */}
+                <button onClick={() => handleUpdate(id, name, img)}>Stock Update</button>
             </Card.Body>
         </Card>
     );
