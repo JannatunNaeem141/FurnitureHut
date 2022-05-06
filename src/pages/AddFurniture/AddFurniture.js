@@ -27,6 +27,7 @@ const AddFurniture = () => {
                 <input placeholder="Furniture Name" {...register("name", { required: true, maxLength: 20 })} />
                 <input placeholder="Price" type="number" {...register("price")} />
                 <input placeholder="Quantity" type="number" {...register("quantity")} />
+                <input placeholder="Supplier" type="text" {...register("supplier")} />
                 <input placeholder="Image url" type="text" {...register("img")} />
                 <textarea placeholder="Description" {...register("description")} />
                 <input type="submit" value="Add Furniture" />
