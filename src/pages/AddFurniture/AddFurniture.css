@@ -1,0 +1,9 @@
+.add-product-section {
+    width: 30%;
+    margin: 80px auto;
+}
+
+.form-field {
+    display: grid;
+    gap: 20px;
+}

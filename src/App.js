@@ -7,6 +7,7 @@ import Products from './pages/Products/Products';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import AddFurniture from './pages/AddFurniture/AddFurniture';
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/products' element={<Products></Products>}></Route>
-        <Route path='/product/:productId' element={<ProductDetails></ProductDetails>}></Route>
+        <Route path='/product/:productId' element={
+          <ProductDetails></ProductDetails>
+        }></Route>
+        <Route path='/addproduct' element={<AddFurniture></AddFurniture>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
       </Routes>

@@ -4,10 +4,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Product.css';
 
 const Product = ({ product }) => {
-    const { name, img, description, id, price, quantity, supplier } = product;
+    const { name, img, description, _id, price, quantity, supplier } = product;
     const navigate = useNavigate();
 
-    const handleUpdate = (id, name, img) => {
+    const handleUpdate = (id) => {
         navigate(`/product/${id}`);
     }
     return (
@@ -28,7 +28,7 @@ const Product = ({ product }) => {
                 {/* <Link >
                     <button onClick={() => handleUpdate(id)}>Stock Update</button>
                 </Link> */}
-                <button onClick={() => handleUpdate(id, name, img)}>Stock Update</button>
+                <button onClick={() => handleUpdate(_id, name, img)}>Stock Update</button>
             </Card.Body>
         </Card>
     );
