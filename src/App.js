@@ -10,6 +10,7 @@ import Register from './pages/Register/Register';
 import AddFurniture from './pages/AddFurniture/AddFurniture';
 import ManageAll from './pages/ManageAll/ManageAll';
 import Footer from './pages/Footer/Footer';
+import Blogs from './pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/products' element={<Products></Products>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/product/:productId' element={
           <ProductDetails></ProductDetails>
         }></Route>
