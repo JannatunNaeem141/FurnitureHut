@@ -36,7 +36,7 @@ const Blogs = () => {
                     <p>There are 2 design patterns in programming. One is asynchronous programming and the other is synchronous programming. NodeJS by default follows the Asynchronous pattern. That is, it does not wait for a task to be completed. In the meantime, NodeJS started another job. That’s why we use NodeJS.</p>
                 </div>
                 <div>
-                    <h4>What is the differences between SQL and NoSQL database?</h4>
+                    <h4>3. What is the differences between SQL and NoSQL database?</h4>
                     <h5>SQL</h5>
                     <p>
                         <ul>
