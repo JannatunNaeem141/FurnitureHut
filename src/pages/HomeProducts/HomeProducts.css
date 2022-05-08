@@ -23,9 +23,7 @@
     }
 
     .sixProducts {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
     }
 
     .home-products-head {
@@ -33,4 +31,13 @@
     }
 }
 
-@media only screen and (min-width:577px) and (max-width:992px) {}
+@media only screen and (min-width:577px) and (max-width:992px) {
+
+    .sixProducts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-products-head {
+        font-size: 35px;
+    }
+}

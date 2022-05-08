@@ -15,3 +15,28 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+@media only screen and (max-width:576px) {
+    .products-section {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .products-title {
+        font-size: 30px;
+    }
+
+    .all-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .products-title {
+        font-size: 35px;
+    }
+
+    .all-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -76,9 +76,37 @@
 
     .explore-btn {
         padding: 8px 25px;
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 20px;
     }
 }
 
-@media only screen and (min-width:577px) and (max-width:992px) {}
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .banner-section {
+        width: 80%;
+    }
+
+    .banner-img img {
+        margin-top: -100px;
+    }
+
+    .banner {
+        display: grid;
+        margin-top: 60px;
+        height: 65vh;
+    }
+
+    .banner-text h1 {
+        font-size: 35px;
+    }
+
+    .explore-svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .explore-btn {
+        padding: 8px 25px;
+        font-size: 22px;
+    }
+}

@@ -125,4 +125,8 @@
     }
 }
 
-@media only screen and (min-width:577px) and (max-width:992px) {}
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .contact-head {
+        font-size: 35px;
+    }
+}
