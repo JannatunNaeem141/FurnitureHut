@@ -1,0 +1,25 @@
+.nav-bar {
+    background-color: #19283F !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: rgb(255, 0, 0) !important;
+}
+
+.navbar-brand {
+    color: rgb(255, 0, 0) !important;
+    font-size: 25px;
+    margin-right: 80px;
+}
+
+.navbar-brand span {
+    color: #fff !important;
+}
+
+@media only screen and (max-width:576px) {}
+
+@media only screen and (min-width:577px) and (max-width:992px) {}
