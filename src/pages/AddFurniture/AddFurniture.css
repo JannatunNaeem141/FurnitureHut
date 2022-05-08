@@ -67,3 +67,43 @@
     background-color: rgb(255, 0, 0);
     color: #fff;
 }
+
+@media only screen and (max-width:576px) {
+    .add-product-section {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .add-inner {
+        padding: 20px;
+    }
+
+    .add-title {
+        font-size: 30px;
+    }
+
+    .form-field input {
+        margin-bottom: 5px;
+    }
+
+    .add-btn button {
+        width: 170px;
+        padding: 5px 8px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .add-product-section {
+        width: 80%;
+        margin: 80px auto;
+    }
+
+    .add-inner {
+        padding: 35px;
+    }
+
+    .add-title {
+        font-size: 35px;
+    }
+}

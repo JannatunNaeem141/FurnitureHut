@@ -15,3 +15,16 @@
     box-shadow: 20px 20px 46px #bebebe,
         -20px -20px 46px #ffffff;
 }
+
+@media only screen and (max-width:576px) {
+    .register-section {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .reg-inner {
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {}

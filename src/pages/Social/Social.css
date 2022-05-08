@@ -34,3 +34,14 @@
     border-radius: 30px;
     color: #fff;
 }
+
+@media only screen and (max-width:576px) {
+
+    .sign-in-btn {
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 6px 0px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {}

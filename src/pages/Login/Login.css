@@ -57,3 +57,37 @@
     text-decoration: none;
     color: rgb(255, 0, 0);
 }
+
+@media only screen and (max-width:576px) {
+    .login-section {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .login-inner {
+        padding: 30px;
+    }
+
+    .form-title {
+        font-size: 30px;
+    }
+
+    .form-btn {
+        padding: 3px 20px;
+        font-size: 18px;
+    }
+
+    .form-btn:hover {
+        border-radius: 30px;
+        border: 1px solid rgb(255, 0, 0);
+        background-color: rgb(255, 0, 0);
+        color: #fff;
+    }
+
+    .form-link {
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {}

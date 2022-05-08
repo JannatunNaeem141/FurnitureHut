@@ -179,3 +179,20 @@
     background: #fff;
     border: 1px solid #ff3298;
 }
+
+
+@media only screen and (max-width:576px) {
+    .footer-section .footer-item-last .btn-primary {
+        width: 80%;
+        font-size: 13px;
+        font-weight: 400;
+        border-radius: 30px;
+        margin-top: 30px;
+        text-transform: uppercase;
+        background: #ff3150;
+        border: 1px solid #ff3150;
+        transition: 1s;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {}

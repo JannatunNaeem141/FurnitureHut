@@ -8,7 +8,6 @@
     font-weight: bold;
     color: rgb(255, 0, 0);
     margin-bottom: 35px;
-    margin-bottom: 35px;
 }
 
 .delete-btn {
@@ -47,3 +46,34 @@
     background-color: rgb(255, 0, 0);
     color: #fff;
 }
+
+@media only screen and (max-width:576px) {
+    .manage-section {
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    .manage-section th {
+        font-size: 12px;
+    }
+
+    .manage-section td {
+        font-size: 12px;
+    }
+
+    .manage-title {
+        font-size: 30px;
+    }
+
+    .delete-btn {
+        padding: 3px 10px;
+        font-size: 14px;
+    }
+
+    .add-furniture-btn {
+        padding: 5px 15px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {}
