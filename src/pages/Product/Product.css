@@ -15,11 +15,6 @@
         -20px -20px 46px #ffffff;
 }
 
-/* .each-card {
-    border: 1px solid rgb(250, 220, 220);
-    border-radius: 20px;
-} */
-
 .each-card .card-img {
     border-radius: 20px;
 }
@@ -51,3 +46,56 @@
     background-color: rgb(255, 0, 0);
     color: #fff;
 }
+
+@media only screen and (max-width:576px) {
+    .card-list span {
+        font-weight: bold;
+    }
+
+    .each-card {
+        border: 1px solid rgb(250, 220, 220);
+        border-radius: 20px;
+        padding: 20px;
+        transition: 0.5s;
+    }
+
+    .each-card:hover {
+        border: 1px solid rgb(255, 0, 0);
+        box-shadow: 20px 20px 46px #bebebe,
+            -20px -20px 46px #ffffff;
+    }
+
+    .each-card .card-img {
+        border-radius: 20px;
+    }
+
+    .card-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .card-list-item {
+        border: 1px solid rgb(250, 220, 220);
+    }
+
+    .btn-body {
+        text-align: center;
+    }
+
+    .stock-update-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        border: 1px solid rgb(250, 220, 220);
+        color: rgb(255, 0, 0);
+        transition: 0.5s;
+        background-color: rgb(250, 220, 220);
+    }
+
+    .stock-update-btn:hover {
+        border-radius: 30px;
+        background-color: rgb(255, 0, 0);
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {}

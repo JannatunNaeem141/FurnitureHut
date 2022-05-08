@@ -35,11 +35,6 @@
         -20px -20px 46px #ffffff;
 }
 
-/* .form-inner {
-    display: grid;
-    width: 100%;
-} */
-
 .form-inner input {
     margin-bottom: 10px;
     padding: 5px 5px 5px 10px;
@@ -94,3 +89,40 @@
     background-color: rgb(255, 0, 0);
     color: #fff;
 }
+
+@media only screen and (max-width:576px) {
+    .contact-section {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    .contact-head {
+        font-size: 30px;
+    }
+
+    .contact-inner {
+        display: grid;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .form-inner {
+        margin-top: 0px;
+    }
+
+    .svg {
+        height: 35px;
+        width: 35px;
+        color: rgb(246 106 106);
+    }
+
+    .contact-btn button {
+        width: 130px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {}

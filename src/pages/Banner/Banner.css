@@ -46,6 +46,39 @@
     margin-right: 20px;
 }
 
-@media only screen and (max-width:576px) {}
+@media only screen and (max-width:576px) {
+    .banner-section {
+        width: 90%;
+    }
+
+    .banner-img {
+        width: 100vw;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .banner {
+        display: grid;
+        margin-top: 40px;
+    }
+
+    .banner-text h1 {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .explore-svg {
+        height: 25px;
+        width: 25px;
+    }
+
+    .explore-btn {
+        padding: 8px 25px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
 
 @media only screen and (min-width:577px) and (max-width:992px) {}
