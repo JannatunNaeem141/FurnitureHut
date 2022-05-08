@@ -52,27 +52,31 @@ const Login = () => {
     }
     return (
         <div className='login-section'>
-            <h2>Login</h2>
-            <Form className='form' onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control type="email" ref={emailRef} placeholder="Enter email" required />
-                </Form.Group>
+            <div className='login-inner'>
+                <h2 className='form-title'>Login</h2>
+                <Form className='form' onSubmit={handleSubmit}>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control className='form-input' type="email" ref={emailRef} placeholder="Enter email" required />
+                    </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control type="password" ref={passwordRef} placeholder="Password" required />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Login
-                </Button>
-                <p>New Here? <Link to='/register' onClick={navigateRegister}>Please Register</Link></p>
-                <p>Forget Password? <Link to='/login' onClick={resetPassword}>Reset Password</Link></p>
-            </Form>
-            {errorElement}
-            <Social></Social>
-            <ToastContainer />
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Control className='form-input' type="password" ref={passwordRef} placeholder="Password" required />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                        <Form.Check type="checkbox" label="Check me out" />
+                    </Form.Group>
+                    <div className='form-btn-div'>
+                        <Button className='form-btn' variant="primary" type="submit">
+                            Login
+                        </Button>
+                    </div>
+                    <p>New Here? <Link className='form-link' to='/register' onClick={navigateRegister}>Please Register</Link></p>
+                    <p>Forget Password? <Link className='form-link' to='/login' onClick={resetPassword}>Reset Password</Link></p>
+                </Form>
+                {errorElement}
+                <Social></Social>
+                <ToastContainer />
+            </div>
         </div>
     );
 };

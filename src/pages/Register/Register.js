@@ -34,25 +34,29 @@ const Register = () => {
 
     return (
         <div className='register-section'>
-            <h2>Register</h2>
-            <Form className='form' onSubmit={handleRegister}>
-                <Form.Control name='name' className="mb-3" type="text" placeholder="Your Name" required />
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control name='email' type="email" placeholder="Enter email" required />
-                </Form.Group>
+            <div className='reg-inner'>
+                <h2 className='form-title'>Register</h2>
+                <Form className='form' onSubmit={handleRegister}>
+                    <Form.Control name='name' className="mb-3 form-input" type="text" placeholder="Your Name" required />
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control className='form-input' name='email' type="email" placeholder="Enter email" required />
+                    </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control name='password' type="password" placeholder="Password" required />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Accept Terms and Conditions" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Register
-                </Button>
-                <p>Already have an account? <Link to='/login' onClick={navigateLogin}>Please Login</Link></p>
-            </Form>
-            <Social></Social>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Control className='form-input' name='password' type="password" placeholder="Password" required />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                        <Form.Check type="checkbox" label="Accept Terms and Conditions" />
+                    </Form.Group>
+                    <div className='form-btn-div'>
+                        <Button className='form-btn ' variant="primary" type="submit">
+                            Register
+                        </Button>
+                    </div>
+                    <p>Already have an account? <Link className='form-link' to='/login' onClick={navigateLogin}>Please Login</Link></p>
+                </Form>
+                <Social></Social>
+            </div>
         </div>
     );
 };

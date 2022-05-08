@@ -8,3 +8,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.home-products-head {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    margin-bottom: 35px;
+}

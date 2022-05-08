@@ -11,24 +11,21 @@ const Product = ({ product }) => {
         navigate(`/product/${id}`);
     }
     return (
-        <Card>
-            <Card.Img variant="top" src={img} />
+        <Card className='each-card'>
+            <Card.Img className='card-img' variant="top" src={img} />
             <Card.Body>
-                <Card.Title>{name}</Card.Title>
+                <Card.Title className='card-title'>{name}</Card.Title>
                 <Card.Text>
                     {description}
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush card-list">
-                <ListGroupItem><span>Price:</span> {price} BDT</ListGroupItem>
-                <ListGroupItem><span>Quantity:</span> {quantity}</ListGroupItem>
-                <ListGroupItem><span>Supplier:</span> {supplier}</ListGroupItem>
+                <ListGroupItem className='card-list-item'><span>Price:</span> {price} BDT</ListGroupItem>
+                <ListGroupItem className='card-list-item'><span>Quantity:</span> {quantity}</ListGroupItem>
+                <ListGroupItem className='card-list-item'><span>Supplier:</span> {supplier}</ListGroupItem>
             </ListGroup>
-            <Card.Body>
-                {/* <Link >
-                    <button onClick={() => handleUpdate(id)}>Stock Update</button>
-                </Link> */}
-                <button onClick={() => handleUpdate(_id, name, img)}>Stock Update</button>
+            <Card.Body className='btn-body'>
+                <button className='stock-update-btn' onClick={() => handleUpdate(_id, name, img)}>Stock Update</button>
             </Card.Body>
         </Card>
     );

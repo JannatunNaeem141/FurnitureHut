@@ -25,32 +25,34 @@ const ManageAll = () => {
     }
     return (
         <div className='manage-section'>
-            <h2>Manage Furnitures</h2>
+            <h2 className='manage-title'>Manage Furnitures</h2>
             <Table Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Supplier</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Delete</th>
+                        <th className='text-center'>Name</th>
+                        <th className='text-center'>Supplier</th>
+                        <th className='text-center'>Price</th>
+                        <th className='text-center'>Quantity</th>
+                        <th className='text-center'>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         products.map(product =>
                             <tr key={product._id}>
-                                <td>{product.name}</td>
-                                <td>{product.supplier}</td>
-                                <td>{product.price}</td>
-                                <td>{product.quantity}</td>
-                                <td><button onClick={() => handleDelete(product._id)}>Delete</button></td>
+                                <td className='text-center'>{product.name}</td>
+                                <td className='text-center'>{product.supplier}</td>
+                                <td className='text-center'>{product.price}</td>
+                                <td className='text-center'>{product.quantity}</td>
+                                <td className='text-center'><button className='delete-btn' onClick={() => handleDelete(product._id)}>Delete</button></td>
                             </tr>
                         )
                     }
                 </tbody>
             </Table>
-            <Link to='/addproduct'>Add New Furniture</Link>
+            <div className='add-furniture'>
+                <Link to='/addproduct' className='add-furniture-btn'>Add New Furniture</Link>
+            </div>
         </div >
     );
 };

@@ -2,3 +2,16 @@
     width: 30%;
     margin: 80px auto;
 }
+
+.reg-inner {
+    border: 1px solid rgb(250, 220, 220);
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.reg-inner:hover {
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    box-shadow: 20px 20px 46px #bebebe,
+        -20px -20px 46px #ffffff;
+}

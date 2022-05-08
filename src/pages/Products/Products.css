@@ -1,6 +1,13 @@
 .products-section {
     width: 80%;
-    margin: 0 auto;
+    margin: 80px auto;
+}
+
+.products-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    margin-bottom: 35px;
 }
 
 .all-products {

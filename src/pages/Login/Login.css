@@ -2,3 +2,58 @@
     width: 30%;
     margin: 80px auto;
 }
+
+.login-inner {
+    border: 1px solid rgb(250, 220, 220);
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.login-inner:hover {
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    box-shadow: 20px 20px 46px #bebebe,
+        -20px -20px 46px #ffffff;
+}
+
+.form-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    margin-bottom: 35px;
+}
+
+.form-input {
+    padding: 5px 5px 5px 10px;
+    width: 100%;
+    border: 1px solid rgb(250, 220, 220);
+    border-radius: 5px;
+    background-color: rgb(250, 220, 220);
+    color: rgb(255, 0, 0) !important;
+}
+
+.form-btn-div {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-btn {
+    padding: 5px 20px;
+    font-size: 20px;
+    border: 1px solid rgb(250, 220, 220);
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+    background-color: rgb(250, 220, 220);
+}
+
+.form-btn:hover {
+    border-radius: 30px;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
+
+.form-link {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}

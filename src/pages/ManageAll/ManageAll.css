@@ -1,4 +1,49 @@
 .manage-section {
     width: 80%;
-    margin: 0 auto;
+    margin: 80px auto;
+}
+
+.manage-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    margin-bottom: 35px;
+    margin-bottom: 35px;
+}
+
+.delete-btn {
+    padding: 5px 15px;
+    font-size: 18px;
+    border: 1px solid rgb(250, 220, 220);
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+    background-color: rgb(250, 220, 220);
+}
+
+.delete-btn:hover {
+    border-radius: 30px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
+
+.add-furniture {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.add-furniture-btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    width: 160px;
+    font-size: 20px;
+    border: 1px solid rgb(250, 220, 220);
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+    background-color: rgb(250, 220, 220);
+}
+
+.add-furniture-btn:hover {
+    border-radius: 30px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
 }

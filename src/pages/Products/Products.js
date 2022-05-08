@@ -7,7 +7,7 @@ const Products = () => {
     const [products, setProducts] = useProducts();
     return (
         <div className='products-section'>
-            <h2>All Products</h2>
+            <h2 className='products-title'>All Products</h2>
             <div className='all-products'>
                 {
                     products.map(product => <Product key={product._id}

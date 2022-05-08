@@ -8,7 +8,38 @@
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    height: 60vh;
+    height: 75vh;
+}
+
+.banner-text h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.banner-text span {
+    color: rgb(255, 0, 0);
+}
+
+.explore-svg {
+    height: 45px;
+    width: 45px;
+}
+
+.explore-btn {
+    text-decoration: none;
+    padding: 8px 25px;
+    font-size: 24px;
+    border: 1px solid rgb(250, 220, 220);
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+    background-color: rgb(250, 220, 220);
+}
+
+.explore-btn:hover {
+    border-radius: 30px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
 }
 
 .banner-text {

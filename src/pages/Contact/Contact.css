@@ -1,34 +1,46 @@
-.add-product-section {
-    width: 30%;
+.contact-section {
+    width: 80%;
     margin: 80px auto;
 }
 
-.add-inner {
-    border: 1px solid rgb(250, 220, 220);
-    padding: 50px;
-    transition: 0.5s;
-}
-
-.add-inner:hover {
-    border: 1px solid rgb(255, 0, 0);
-    border-radius: 20px;
-    box-shadow: 20px 20px 46px #bebebe,
-        -20px -20px 46px #ffffff;
-}
-
-.form-field {
-    display: grid;
-    gap: 10px;
-}
-
-.add-title {
+.contact-head {
     font-size: 40px;
     font-weight: bold;
     color: rgb(255, 0, 0);
     margin-bottom: 35px;
 }
 
-.form-field input {
+.contact-inner {
+    display: flex;
+    width: 100%;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.form-inner {
+    display: grid;
+    width: 100%;
+    border: 1px solid rgb(250, 220, 220);
+    padding: 20px;
+    transition: 0.5s;
+    margin-top: -60px;
+}
+
+.form-inner:hover {
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    box-shadow: 20px 20px 46px #bebebe,
+        -20px -20px 46px #ffffff;
+}
+
+/* .form-inner {
+    display: grid;
+    width: 100%;
+} */
+
+.form-inner input {
     margin-bottom: 10px;
     padding: 5px 5px 5px 10px;
     width: 100%;
@@ -38,7 +50,7 @@
     color: rgb(255, 0, 0);
 }
 
-.form-field textarea {
+.form-inner textarea {
     padding: 5px 5px 5px 10px;
     width: 100%;
     border: 1px solid rgb(250, 220, 220);
@@ -47,22 +59,37 @@
     color: rgb(255, 0, 0);
 }
 
-.add-btn {
-    text-align: center;
+.contact-text-item {
+    display: flex;
+    align-items: center;
 }
 
-.add-btn button {
-    margin-top: 30px;
-    width: 170px;
-    padding: 5px 10px;
-    font-size: 20px;
+.item-img {
+    padding: 20px;
+}
+
+.svg {
+    height: 45px;
+    width: 45px;
+    color: rgb(246 106 106);
+}
+
+.contact-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-btn button {
+    width: 160px;
+    height: 50px;
+    font-size: 24px;
     border: 1px solid rgb(250, 220, 220);
     color: rgb(255, 0, 0);
     transition: 0.5s;
     background-color: rgb(250, 220, 220);
 }
 
-.add-btn button:hover {
+.contact-btn button:hover {
     border-radius: 30px;
     background-color: rgb(255, 0, 0);
     color: #fff;

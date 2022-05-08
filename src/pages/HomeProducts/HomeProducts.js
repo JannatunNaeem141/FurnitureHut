@@ -8,7 +8,7 @@ const HomeProducts = () => {
     const sixProducts = products.slice(0, 6);
     return (
         <div className='home-products'>
-            <h2>Products</h2>
+            <h2 className='home-products-head'>Products</h2>
             <div className='sixProducts'>
                 {
                     sixProducts.map(product => <Product
