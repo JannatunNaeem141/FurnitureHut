@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useProducts from '../../hooks/useProducts';
 import './ManageAll.css';
 
 const ManageAll = () => {
 
-    const [products, setProducts] = useProducts()
+    const [products, setProducts] = useProducts();
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
@@ -35,21 +36,21 @@ const ManageAll = () => {
                         <th>Delete</th>
                     </tr>
                 </thead>
-            </Table>
-            {
-                products.map(product =>
-                    <Table Table striped bordered hover key={product._id}>
-                        <tbody>
-                            <tr>
+                <tbody>
+                    {
+                        products.map(product =>
+                            <tr key={product._id}>
                                 <td>{product.name}</td>
                                 <td>{product.supplier}</td>
                                 <td>{product.price}</td>
                                 <td>{product.quantity}</td>
                                 <td><button onClick={() => handleDelete(product._id)}>Delete</button></td>
                             </tr>
-                        </tbody>
-                    </Table>)
-            }
+                        )
+                    }
+                </tbody>
+            </Table>
+            <Link to='/addproduct'>Add New Furniture</Link>
         </div >
     );
 };
