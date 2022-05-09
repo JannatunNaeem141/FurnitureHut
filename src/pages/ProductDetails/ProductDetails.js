@@ -8,14 +8,14 @@ const ProductDetails = () => {
     const { quantity } = furniture;
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://powerful-citadel-88878.herokuapp.com/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setFurniture(data))
     }, [furniture]);
 
     const handleDeliver = id => {
-        const url = `http://localhost:5000/product`;
+        const url = `https://powerful-citadel-88878.herokuapp.com/product`;
         const newQuantity = Number(quantity) - 1;
         const newObject = {
             id: productId,
@@ -34,7 +34,7 @@ const ProductDetails = () => {
             })
     };
     const handleReStock = id => {
-        const url = `http://localhost:5000/product`;
+        const url = `https://powerful-citadel-88878.herokuapp.com/product`;
         const newQuantity = Number(quantity) + 1;
         const newObject = {
             id: productId,
@@ -73,6 +73,7 @@ const ProductDetails = () => {
                         <button className='deliver-btn' onClick={() => handleDeliver(furniture._id)}>Deliver</button>
                         <button className='restock-btn' onClick={() => handleReStock(furniture._id)}>Re-Stock</button>
                     </div>
+
                 </div>
             </div>
         </div>

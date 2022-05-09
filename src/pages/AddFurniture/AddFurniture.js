@@ -5,7 +5,7 @@ import './AddFurniture.css';
 const AddFurniture = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url = `http://localhost:5000/product`;
+        const url = `https://powerful-citadel-88878.herokuapp.com/product`;
         fetch(url, {
             method: 'POST',
             headers: {

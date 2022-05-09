@@ -8,6 +8,7 @@ import './Login.css'
 import { async } from '@firebase/util';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../Loading/Loading';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -27,6 +28,9 @@ const Login = () => {
 
     if (user) {
         navigate(from, { replace: true });
+    }
+    if (loading) {
+        return <Loading></Loading>
     }
     if (error) {
         errorElement = <div><p className='text-danger'>Error: {error?.message}</p></div>

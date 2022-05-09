@@ -16,6 +16,31 @@
     gap: 20px;
 }
 
+.manage-btn {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.manage-all-btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 24px;
+    border: 1px solid rgb(250, 220, 220);
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+    background-color: rgb(250, 220, 220);
+}
+
+.manage-all-btn:hover {
+    border-radius: 30px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
+
+.for-margin {
+    margin-left: 30px;
+}
+
 @media only screen and (max-width:576px) {
     .products-section {
         width: 90%;

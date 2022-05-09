@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Social from '../Social/Social';
 import './Register.css';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -30,6 +31,9 @@ const Register = () => {
     }
     if (user) {
         console.log('user', user);
+    }
+    if (loading) {
+        return <Loading></Loading>
     }
 
     return (

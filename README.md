@@ -1,6 +1,6 @@
 # FurnitureHut
 
-Live Link: [https://corporate-sales-trainer.web.app/](https://corporate-sales-trainer.web.app/).
+Live Link: [https://furniturehut-4239e.web.app/](https://furniturehut-4239e.web.app/).
 
 ### Short description of the project:
 - This is a warehouse site of FurnitureHut. This is made with React.js . For more technologies on this site, look down below.

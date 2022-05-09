@@ -6,7 +6,7 @@ const UpdateItem = () => {
     const [furniture, setFurniture] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://powerful-citadel-88878.herokuapp.com/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setFurniture(data))
