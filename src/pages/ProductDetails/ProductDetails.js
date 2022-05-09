@@ -4,39 +4,48 @@ import './ProductDetails.css';
 
 const ProductDetails = () => {
     const { productId } = useParams();
-    const [furniture, setFurniture] = useState({});
+    const [furniture, setFurniture] = useState([]);
+    const { quantity } = furniture;
 
     useEffect(() => {
         const url = `http://localhost:5000/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setFurniture(data))
-    }, []);
+    }, [furniture]);
 
     const handleDeliver = id => {
-        const url = `http://localhost:5000/product/${productId}`;
-        const newQuantity = furniture.quantity - 1;
+        const url = `http://localhost:5000/product`;
+        const newQuantity = Number(quantity) - 1;
+        const newObject = {
+            id: productId,
+            testQuantity: newQuantity
+        }
         fetch(url, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(newQuantity)
+            body: JSON.stringify(newObject)
         })
             .then(res => res.json())
             .then(result => {
                 console.log(result);
             })
     };
-    const handleReStock = data => {
-        console.log(data)
-        const url = `http://localhost:5000/product/${productId}`;
+    const handleReStock = id => {
+        const url = `http://localhost:5000/product`;
+        const newQuantity = Number(quantity) + 1;
+        const newObject = {
+            id: productId,
+            testQuantity: newQuantity
+        }
         fetch(url, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(newObject)
         })
             .then(res => res.json())
             .then(result => {

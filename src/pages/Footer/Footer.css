@@ -51,8 +51,15 @@
     margin-bottom: 15px;
 }
 
+.footer-section .footer-common p {
+    color: #a8b9c0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
 .footer-section .footer-common ul {
     list-style: none;
+    padding-left: 0px;
 }
 
 .footer-section .footer-common ul li {
