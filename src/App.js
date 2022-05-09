@@ -11,6 +11,7 @@ import AddFurniture from './pages/AddFurniture/AddFurniture';
 import ManageAll from './pages/ManageAll/ManageAll';
 import Footer from './pages/Footer/Footer';
 import Blogs from './pages/Blogs/Blogs';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/manageall' element={<ManageAll></ManageAll>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

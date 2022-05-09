@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowRightIcon } from '@heroicons/react/solid'
 import './Footer.css';
 
 const Footer = () => {
@@ -21,12 +22,12 @@ const Footer = () => {
                             </div>
                             <div className="row">
                                 <div className="copyright">
-                                    <p>Created by © 2017 <span>FurnitureHut</span></p>
+                                    <p>&copy; Created by <span>FurnitureHut </span>  -2022</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-2">
+                    <div className="col-md-4">
                         <div className="footer-common">
                             <h4>Links</h4>
                             <ul>
@@ -51,13 +52,13 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-md-2">
+                    <div className="col-md-4">
                         <div className="footer-common">
                             <h4>About Us</h4>
                             <p>FurnitureHut is now considered as a well-known furniture brand in Bangladesh. With the utmost promise to provide the finest home and office furniture Regal started its journey in January, 2022.</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    {/* <div className="col-md-4">
                         <div className="footer-item-last">
                             <div className="row">
                                 <h4>Contact Us</h4>
@@ -67,18 +68,7 @@ const Footer = () => {
                                     <p>Get in touch with us via mail phone.We are waiting for  your call or message</p>
                                 </div>
                             </div>
-                            <div className="row">
-                                <a href="#" className="btn btn-primary">
-                                    <div className="btn-edit">
-                                        <div className="mail">
-                                            mail
-                                        </div>
-                                        <div className="icon">
-                                            <i className="fas fa-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+
                             <div className="row">
                                 <div className="social-icons">
                                     <ul>
@@ -98,7 +88,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>
