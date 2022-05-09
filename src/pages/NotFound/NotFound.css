@@ -1,0 +1,24 @@
+.not-found {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-found-head {
+    text-align: center;
+    font-size: 100px;
+    color: rgb(255, 0, 0);
+    font-weight: 100;
+}
+
+.not-found-text1 {
+    color: #19283F;
+    text-align: center;
+    font-size: 34px;
+}
+
+.not-found-text2 {
+    color: #19283F;
+    text-align: center;
+}
