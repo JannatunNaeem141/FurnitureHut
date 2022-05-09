@@ -1,0 +1,17 @@
+.faq-section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(255, 0, 0);
+    background-color: rgb(250, 220, 220);
+}
+
+.accordion-button {
+    color: rgb(255, 0, 0);
+}
+
+.accordion-button:focus {
+    background-color: rgb(250, 220, 220);
+}
