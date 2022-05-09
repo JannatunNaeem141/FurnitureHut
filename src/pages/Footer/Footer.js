@@ -10,8 +10,8 @@ const Footer = () => {
                     <div class="col-md-4">
                         <div class="footer-item-first">
                             <div class="row">
-                                <div class="logo">
-                                    <Link to='/'>FurnitureHut</Link>
+                                <div>
+                                    <Link class="logo" to='/'>Furniture<span>Hut</span></Link>
                                 </div>
                             </div>
                             <div class="row">
@@ -21,7 +21,7 @@ const Footer = () => {
                             </div>
                             <div class="row">
                                 <div class="copyright">
-                                    <p>Created by © 2017 <span>ThemeXpert</span></p>
+                                    <p>Created by © 2017 <span>FurnitureHut</span></p>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                                     <Link to='/'>Home</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Our Services</a>
+                                    <Link to='/products'>Products</Link>
                                 </li>
                                 <li>
                                     <a href="#">Portfolio</a>

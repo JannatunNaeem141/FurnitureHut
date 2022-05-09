@@ -11,6 +11,7 @@
 
 .each-card:hover {
     border: 1px solid rgb(255, 0, 0);
+    border-radius: 30px;
     box-shadow: 20px 20px 46px #bebebe,
         -20px -20px 46px #ffffff;
 }
