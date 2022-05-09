@@ -37,7 +37,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <p>Email: abc@furniturehut.com</p>
-                            <p>Web: </p>
+                            <p>Web: https://furniturehut-4239e.web.app/</p>
                         </div>
                     </div>
                 </div>
